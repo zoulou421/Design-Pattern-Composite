@@ -12,6 +12,14 @@ public class App {
 		root.addComponent(f2);
 		root.addComponent(f3);
 		
+		f1.addComponent(new File("Composite"));
+		f1.addComponent(new File("Decorator"));
+		
+		f2.addComponent(new File("Strategy"));
+		
+		f3.addComponent(new File("Singleton"));
+		f3.addComponent(new File("Builder"));
+		
 		root.view();
 
 	}
