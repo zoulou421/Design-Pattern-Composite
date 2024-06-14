@@ -20,6 +20,14 @@ public class App {
 		f3.addComponent(new File("Singleton"));
 		f3.addComponent(new File("Builder"));
 		
+		/* same result as next
+		 * Folder fst1=(Folder)f1.addComponent(new Folder("st1"));
+		fst1.addComponent(new File("Composite version 2"));
+		*/
+		//next
+		f1.addComponent(new Folder("st1"));
+		Folder fst1=(Folder)f1.getComponent("st1");
+		fst1.addComponent(new File("Composite version 2"));
 		root.view();
 
 	}

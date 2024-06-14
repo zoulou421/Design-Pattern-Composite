@@ -3,6 +3,8 @@ package design_pattern_composite;
 public abstract class ComponentChild {
 	protected String name;
 	protected int level;
+	//IMPORTANT REMARK
+	protected Folder parent;//IF BIDIRECTIONAL
 	
 	public abstract void view();
 
